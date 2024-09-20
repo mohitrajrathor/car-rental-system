@@ -92,7 +92,7 @@ The **Car Rental System** is a console-based Java application that simulates a c
 
 ## Author
 
-[Your Name]
+Mohit Raj Rathor
 
 ## License
 
