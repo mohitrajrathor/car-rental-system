@@ -1,103 +1,100 @@
-Here’s a **README** file for your Car Rental System project:
-
----
-
 # Car Rental System
 
 ## Overview
 
-The **Car Rental System** is a console-based Java application that simulates a car rental service. It allows customers to rent cars for a specified number of days, providing functionality for renting, returning cars, and managing car availability.
+The **Car Rental System** is a console-based Java application that simulates a simple car rental service. It allows customers to rent vehicles for a specified number of days and provides functionality to manage cars, customers, and rental transactions.
 
-### Features
+## Features
 
-- Add and manage cars in the rental system.
-- Register customers for renting cars.
-- Calculate the rental cost based on the number of days.
-- Rent available cars and mark them as unavailable during the rental period.
-- Return cars and update their availability status.
-- Display information about the rental process and final price.
+* Add and manage cars in the rental system
+* Register customers and associate them with rentals
+* Calculate rental cost based on the number of days
+* Rent available cars and update their availability status
+* Process car returns and restore availability
+* Display clear information about rentals and pricing
 
 ## Project Structure
 
-- **Car Class**: Represents a car in the rental system with attributes like `carId`, `brand`, `model`, and `basePricePerDay`. Includes methods to manage car rental status.
+* **Car**
+  Represents a car with attributes such as `carId`, `brand`, `model`, and `basePricePerDay`. Includes methods to manage rental availability.
 
-- **Customer Class**: Represents a customer with attributes like `customerId` and `name`.
+* **Customer**
+  Represents a customer with fields like `customerId` and `name`.
 
-- **Rental Class**: Represents a rental transaction, associating a `Car` and a `Customer` for a specific number of days.
+* **Rental**
+  Represents a rental transaction, linking a `Car` and `Customer` for a defined rental duration.
 
-- **CarRentalSystem Class**: The main class managing all cars, customers, and rentals. It contains functionality for adding cars, renting them, and returning them.
+* **CarRentalSystem**
+  Core class that manages the lists of cars, customers, and rentals. Provides methods to add cars, rent them out, and process returns.
 
-- **Main Class**: The entry point for the program, where cars are added to the system, and the menu is launched for users to interact with the system.
+* **Main**
+  Entry point of the application. Initializes the system, loads sample data, and launches the interactive console menu.
 
 ## How to Run the Project
 
-1. **Prerequisites**:
-    - Java Development Kit (JDK) installed on your machine.
-    - Basic understanding of how to run Java applications.
+### Prerequisites
 
-2. **Steps to Run**:
-    - Clone or download the project to your local machine.
-    - Open the project in your favorite IDE (Eclipse, IntelliJ, etc.).
-    - Run the `Main` class to start the application.
-    - Follow the prompts in the console to rent or return cars.
+* Java Development Kit (JDK) installed
+* Basic familiarity with running Java programs
 
-3. **Menu Options**:
-    - `Rent a Car`: Allows a user to rent a car by entering their name, selecting a car, and specifying the number of days.
-    - `Return a Car`: Allows a user to return a rented car by providing the car ID.
-    - `Exit`: Exits the application.
+### Steps
 
-## Example
+1. Clone or download the project.
+2. Open it in your preferred IDE (IntelliJ, Eclipse, VS Code, etc.).
+3. Run the `Main` class.
+4. Follow on-screen console prompts to rent or return cars.
 
-1. Start the program:
-   ```
-   ===== Car Rental System =====
-   1. Rent a Car
-   2. Return a Car
-   3. Exit
-   Enter your choice: 
-   ```
-2. If you choose `1`, you can rent a car:
-   ```
-   === Rent a Car ===
-   Enter Your name: John Doe
+### Menu Options
 
-   Available Cars:
-   C001 - Toyota - Camry
-   C002 - Honda - City
+* **Rent a Car** – Enter your name, choose a car, and specify rental days
+* **Return a Car** – Return a rented vehicle using its car ID
+* **Exit** – Close the application
 
-   Enter the car ID you want to rent: C001
-   Enter the number of days for rental: 5
+## Example Usage
 
-   === Rental Information ===
-   Customer ID: CUS1
-   Customer name: John Doe
-   Car: Toyota Camry
-   Rental Days: 5
-   Total Price: $300.00
+```
+===== Car Rental System =====
+1. Rent a Car
+2. Return a Car
+3. Exit
+Enter your choice: 
+```
 
-   Confirm rental (y/n): y
-   Car rented Successfully.
-   ```
+**Renting a car example:**
+
+```
+=== Rent a Car ===
+Enter your name: John Doe
+
+Available Cars:
+C001 - Toyota - Camry
+C002 - Honda - City
+
+Enter the car ID you want to rent: C001
+Enter the number of days for rental: 5
+
+=== Rental Information ===
+Customer ID: CUS1
+Customer Name: John Doe
+Car: Toyota Camry
+Rental Days: 5
+Total Price: $300.00
+
+Confirm rental (y/n): y
+Car rented successfully.
+```
 
 ## Future Improvements
 
-- Add a user interface (UI) for a better user experience.
-- Implement a database to persist customer and car data.
-- Add more features like discounts, insurance options, and a wider selection of cars.
+* Add a graphical user interface (GUI)
+* Integrate a database to store car and customer records
+* Implement additional features such as:
+
+  * Discount options
+  * Insurance add-ons
+  * Expanded car categories
 
 ## Technologies Used
 
-- **Java**: Programming language used to build the system.
-- **JDK**: Java Development Kit to compile and run the code.
-
-## Author
-
-Mohit Raj Rathor
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-You can modify the **Future Improvements** section based on your vision for the project and other enhancements you plan to make!
+* **Java** – Core programming language
+* **JDK** – For compiling and running the program
